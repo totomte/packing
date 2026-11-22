@@ -1,5 +1,6 @@
 package com.thomas.packing
 
+import android.app.Activity
 import android.app.AlertDialog
 import android.graphics.Typeface
 import android.os.Bundle
@@ -7,14 +8,13 @@ import android.view.Gravity
 import android.view.ViewGroup
 import android.widget.*
 import android.widget.LinearLayout.LayoutParams
-import androidx.appcompat.app.AppCompatActivity
 
 /**
  * Packing APK: country-keyed packing lists with a shared template.
  * Storage: app-private JSON (survives restarts). Countries can be added,
  * renamed, deleted; "New from template" seeds the default kit.
  */
-class MainActivity : AppCompatActivity() {
+class MainActivity : Activity() {
 
     private lateinit var root: LinearLayout
     private lateinit var listArea: LinearLayout
